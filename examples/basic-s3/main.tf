@@ -3,7 +3,7 @@ provider "aws" {
 }
 
 module "secure_storage" {
-  source = "../modules/secure-s3-bucket"
+  source = "../../modules/secure-s3-bucket"
 
   bucket      = "app-assets-data"
   environment = "qa"
