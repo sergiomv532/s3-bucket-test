@@ -6,11 +6,11 @@ module "secure_storage" {
   source = "../../modules/secure-s3-bucket"
 
   bucket_name = "app-assets-data"
-  environment = "prod"
-  
+  environment = "qa"
+
   tags = {
-    Owner       = "Platform Engineering"
-    CostCenter  = "12345"
+    Owner       = "Platform Engineering I"
+    CostCenter  = "123456"
     DataPrivacy = "High"
   }
 }
